@@ -17,3 +17,8 @@ def transactions():
 @financial_app.route('/categories')
 def categories():
     return 'ya lublu ponchiki'
+
+
+@financial_app.route('/information')
+def info():
+    return 'Vot tak vot'
