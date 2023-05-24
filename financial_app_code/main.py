@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 
 financial_app = Flask(__name__)
@@ -6,7 +6,7 @@ financial_app = Flask(__name__)
 
 @financial_app.route('/')
 def index():
-    return 'Hi'
+    return render_template('base.html')
 
 
 @financial_app.route('/transactions')
