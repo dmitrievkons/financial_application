@@ -6,19 +6,19 @@ financial_app = Flask(__name__)
 
 @financial_app.route('/')
 def index():
-    return render_template('base.html')
+    return render_template('home.html', title='Home', content='OkPonChick')
 
 
 @financial_app.route('/transactions')
 def transactions():
-    return 'pon'
+    return render_template('transactions.html', title='Transactions', content='Textttt')
 
 
 @financial_app.route('/categories')
 def categories():
-    return 'ya lublu ponchiki'
+    return render_template('categories.html', title='Categories', content='Pon')
 
 
 @financial_app.route('/information')
 def info():
-    return 'Vot tak vot'
+    return render_template('information.html', title='Info', content='oKKKKKKKKKKKKKKKKKkk')
